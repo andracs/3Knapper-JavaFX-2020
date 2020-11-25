@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="469.0" prefWidth="493.0" style="-fx-background-color: #937;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="487.0" prefWidth="505.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="54.0" prefWidth="493.0">
+               <children>
+                  <Button fx:id="hejKnap" mnemonicParsing="false" onAction="#hej" text="Hej!">
+                     <HBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="nuKnap" mnemonicParsing="false" onAction="#nu" text="Nu?">
+                     <HBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="terningKnap" mnemonicParsing="false" onAction="#terning" text="Terning!">
+                     <HBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="terningKnap2" layoutX="315.0" layoutY="35.0" mnemonicParsing="false" onAction="#terningAvanceret" text="Terning avanceret">
+                     <HBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextArea fx:id="textArea1" prefHeight="519.0" prefWidth="493.0" />
+            <Pane fx:id="terningPane" prefHeight="443.0" prefWidth="493.0" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="115.0" layoutX="202.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="110.0" />
+                  <Label fx:id="talLabel" layoutX="235.0" layoutY="33.0" text="6">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
